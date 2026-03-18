@@ -8,9 +8,6 @@ Copy the contents of `c9-notify.js` to `~/.config/opencode/plugins` (or somewher
 
 ```json
 {
-  "$schema": "https://opencode.ai/config.json",
-  "plugin": [
-    "file:///path/to/your/c9-notify.js"
-  ]
+  "plugin": ["opencode-terminal-notify"]
 }
 ```
