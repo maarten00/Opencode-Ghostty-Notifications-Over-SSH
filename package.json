@@ -1,0 +1,32 @@
+{
+  "name": "opencode-terminal-notify",
+  "version": "1.0.0",
+  "description": "OpenCode plugin that sends terminal escape sequence notifications (OSC 9) for SSH/remote workflows",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js --external:@opencode-ai/plugin --external:@opencode-ai/sdk",
+    "dev": "esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js --external:@opencode-ai/plugin --external:@opencode-ai/sdk --watch"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "notification",
+    "osc9",
+    "ssh"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@opencode-ai/plugin": "latest"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "typescript": "^5.0.0"
+  }
+}
