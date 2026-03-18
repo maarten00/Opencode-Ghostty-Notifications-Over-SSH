@@ -4,7 +4,7 @@ An [OpenCode](https://opencode.ai) plugin that sends **OSC 9 terminal escape seq
 
 ## Installation
 
-Copy the contents of `c9-notify.js` to `~/.config/opencode/plugins` (or somewhere else) and add the plugin to `~/.config/opencode/opencode.json` (create it if it doesn't exist):
+Copy the contents of `oc9-notify.js` to `~/.config/opencode/plugins` (or somewhere else) and add the plugin to `~/.config/opencode/opencode.json` (create it if it doesn't exist):
 
 ```json
 {
